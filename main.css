@@ -1,123 +1,138 @@
-body {
-    background-color: #6b9aff;
-    font-family:Arial, Helvetica, sans-serif; 
-    font-size: 16px;
-    margin: 40px;
-} 
-
-/* .top {
-    width: 250px;
-    height: 120px;
-    margin: 20px;
-   
-
-}
-
-.top img {
-    width: 50%;;
-    display: inline-block;
+html, body {
+    height: 100%;
+    background-image: url(images/great-sand-dunes-np-nps-photo-patrick-myers-mars-over-dunes.jpeg);
+    background-size: cover;
+    background-position: center;
     
-} */
 
-.top {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 150px;
-    display: flex;
-    flex-direction: row;
-    background-color: #89a2b6;
 }
 
-.top > img {
-    height: 100px;
-    
+.body {
+    display: grid;
+    grid-template-columns: 1fr minmax(max-content, 75%) 1fr;
+    /*grid-template-columns: repeat(12, 1fr);*/
+    grid-template-rows: min-content auto min-content;
 }
 
-nav ul {
-    display: flex;
-    flex-direction: row;
-}
 
-nav ul li {
-    margin: 25px; 
-    font-size: 20px;
-    border-color: #6b9aff;
-    border-style: none;
+header, footer {
+    grid-column-start: 1;
+    grid-column-end: 12;
 }
 
 
 
-
-
-/* nav {
-    background-color: rgb(133, 185, 245);
-    margin: 10px;
-    display: flex;
-    flex-direction: row;
-    
-    
+.navbar ul {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    /*justify-items: end NOT NEEDED ANYMORE WITH GRID START AND END;*/
+    list-style: none;
+    background-color: rgb(0, 0, 0);
+    padding-left: 0;
+    margin: 0;
+    /*text-align: right; NOT NEEDED ANYMORE WITH GRID START AND END*/
+    gap: 1em;
     
 }
 
-nav ul {
-    margin: 0px;
-    padding: 5px 0px 5px 0px;
+#first {
+    grid-column-start: 8;
+    grid-column-end: 9;
+}
+#second {
+    grid-column-start: 9;
+    grid-column-end: 10;
+}
+#third {
+    grid-column-start: 10;
+    grid-column-end: 11;
+}
+#fourth {
+    grid-column-start: 11;
+    grid-column-end: 12;
 }
 
-nav ul li {
-display: inline;
-margin: 5px 10px 5px 10px;
-} */
+/*.navbar  ul li {
+    display: inline-block NOT NEEDED ANYMORE WITH GRID START AND END;
+    margin: 1em;
+}*/
 
-
-
-#aboutme {
-    width: 150px;
-}
-
- #aboutme img{
-    width: 100px;
-    height: 100px;
- }
-
- .main img{
-    height: 200px;
-    width: 300px;
-}
-   
-    
-
-
-
-
-
-
-
-#tools {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color:rgb(245, 236, 255);
-    margin: 0px 0px 25px 25px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-#tools img {
-    width: 200px;
-}
-
-#mywork {
+.navbar > ul > li > a {
+    color: rgb(255, 182, 46);
+    background: 
+    linear-gradient(
+        to right,
+        rgba(255, 182, 46, 1),
+        rgba(255, 182, 46, 1)
+    ),
+    linear-gradient(
+        to right,
+        rgba(255, 182, 46),
+        rgb(255, 100, 0),
+        rgb(255, 100, 0)
+    );
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    /*transition: background-size 400ms;*/
+    display: block;
+    padding: 1.5em 1em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-    font-size: 50px;
-    font-family:fantasy;
+    font-size: 1rem;
+    text-decoration: none;
 }
 
-#work {
-    margin-top: 150px;
+.navbar a:hover {
+background-size: 0 3px, 100% 3px;
 }
 
+.leftside { 
+     margin: 1em;
+    color: rgb(255, 182, 46);
+    /*padding: 0 3em; ADDING PADDING WILL NOT GROW CONTAINER, INSTEAD, PUSHES TEXT TO CENTER OF CONTAINER*/
+    border: 2px solid black;
+    font-size: 20px;
+    
+}
 
+.middle {
+    margin: 1em;
+    color: rgb(255, 182, 46);
+    /*padding: ;*/
+    border: 2px solid black;
+    /*text-align: center;*/
+    font-size: 20px;
+    
+}
 
+.middle-title {
+    font-size: 36px;
+}
 
+#article1 {
+    /*justify-self: end; Why doesnt this work? */
+    margin: 2em 0;
+    text-align: center;
+}
+
+#article2 {
+    margin: 2em 0;
+    text-align: center;
+}
+
+#article3 {
+    margin: 2em 0;
+    text-align: center;
+}
+
+.rightside {
+    margin: 1em;
+    color: rgb(255, 182, 46);
+    /*padding: ;*/
+    border: 2px solid black;
+    font-size: 20px;
+}
 
