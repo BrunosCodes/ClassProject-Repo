@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/other.css">
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <img src="images/rosetta_stone.png" alt="logo" height="67">
+
+                <li id="first"><a href="index.html">Home</a></li>
+                <li id="second"><a href="#">HTML</a></li>
+                <li id="third"><a href="#">CSS</a></li>
+                <li id="fourth"><a href="javascript.html">JavaScript</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="javascriptMain">
+        <div class="containerMain">
+
+            <form>
+                <h3>Contact</h3>
+
+                <label for="contact-name">Full Name</label>
+                    <input type="text" id="contact-name" placeholder="Name" onkeyup="validateName()">
+                   <!-- <label for="contact-lastname"></label>
+                    <input type="text" id="contact-lastname" placeholder="Last Name" onkeyup="/*validateName()*/">-->
+                    <span id="name-error"></span>
+
+                
+                    <label for="contact-email">Email</label>
+                    <input type="email" id="contact-email" placeholder="Email" onkeyup="validateEmail()">
+                    <span id="email-error"></span>
+
+                    <label for="contact-number">Phone</label>
+                    <input type="tel" id="contact-number" placeholder="Phone" onkeyup="validateNumber()">
+                    <span id="number-error"></span>
+                
+
+                
+                    <label for="contact-message">Message</label>
+                    <textarea name="messageInput" id="contact-message" cols="30" rows="10"
+                        onkeyup="/*validateMessage()*/"></textarea>
+                    <span id="message-error"></span>
+                
+
+                
+                    <button onclick="/*return validateForm()*/">Submit</button>
+                    <span id="submit-error"></span>
+                
+
+            </form>
+        </div>
+
+        <script src="java.js"></script>
+    </main>
+</body>
+
+</html>

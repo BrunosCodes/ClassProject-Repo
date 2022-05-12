@@ -1,0 +1,38 @@
+.javascriptMain {
+    width: 55%;
+    height: 100%;
+    margin: 0;
+    background-color: rgb(255, 182, 46);
+    border-radius: 5px;
+}
+
+.containerMain {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column; 
+
+}
+
+label {
+    margin-top: .5rem;
+    color: white;
+}
+
+h3 {
+    color: white;
+}
+    
+button {
+    margin-top: 1rem;
+}
+
+span {
+    color: black;
+}

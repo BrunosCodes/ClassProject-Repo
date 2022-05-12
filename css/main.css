@@ -1,0 +1,111 @@
+html, body {
+    height: 100%;
+    background-image: url(../images/great-sand-dunes-np-nps-photo-patrick-myers-mars-over-dunes.jpeg);
+    background-size: cover;
+    background-position: center;
+    
+
+}
+
+body {
+    display: grid;
+    grid-template-columns: [left-edge] 1fr [right-edge];
+    grid-template-rows: auto-flow min-content;
+    grid-template-areas: "header"
+                         "nav   "
+                         "aside "
+                         "main  "
+                         "footer";
+    gap: 1em;
+    margin: 1em;
+}
+
+
+
+@media screen and (min-width: 600px) {
+    body {
+        display: grid;
+        grid-template-columns: [left-edge] 2fr [midpoint] 1fr [right-edge];
+        grid-template-rows: autoflow min-content;
+        grid-template-areas: "header header"
+                             "nav    aside "
+                             "main   main  "
+                             "footer footer";
+
+    }
+       /* header {
+        grid-column: left-edge / right-edge;
+        }
+    
+        nav {
+        grid-column: left-edge / midpoint;
+        }
+
+        aside {
+            grid-column: midpoint / right-edge;
+        }
+
+        main {
+            grid-column: left-edge / right-edge;
+        }
+
+        footer {
+            grid-column: left-edge / right-edge;
+        } */
+
+        
+} 
+
+@media screen and (min-width: 800px) {
+    body {
+        display: grid;
+        grid-template-columns: [left-edge] 1fr [midpoint] 2fr [right-edge];
+        grid-template-rows: autoflow min-content;
+        grid-template-areas: "header header "
+                             "nav     main  "
+                             "aside   main "
+                             "footer footer";
+    }
+
+   /* header {
+        grid-column: left-edge / right-edge;
+        }
+    
+        nav {
+        grid-column: left-edge / midpoint;
+        }
+
+        aside {
+            grid-column: left-edge / midpoint;
+        }
+
+        main {
+            grid-column: midpoint / right-edge;
+        }
+
+        footer {
+            grid-column: left-edge / right-edge;
+        } */
+} 
+
+header {grid-area: header; }
+nav {grid-area: nav; }
+main {grid-area: main; }
+aside {grid-area: aside; }
+footer {grid-area: footer; }
+
+
+/*.javascriptMain {
+    display: grid;
+    grid-template-columns: [left-edge] 1fr [right-edge];
+    grid-template-rows: autoflow min-content;
+    grid-template-areas: "name    "
+                         "email   "
+                         "number  "
+                         "message ";
+}
+
+.name {grid-area: name;}
+.email {grid-area: email;}
+.number {grid-area: number;}
+.message {grid-area: message;} DOESNT SEEM TO AFFECT LAYOUT 

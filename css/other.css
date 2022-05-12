@@ -1,0 +1,196 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: inline-block;
+    text-align: center;
+}
+
+
+/*header > nav > ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, 1fr);
+    display: inline-block;
+    justify-content: center;
+    list-style: none;
+    background-color: black;
+    padding: 0;
+    margin: 0;
+
+}
+
+#first {
+    grid-row-start: 8;
+    grid-row-end: 9;
+    }
+    #second {
+    grid-row-start: 9;
+    grid-row-end: 10;
+    }
+    #third {
+    grid-row-start: 10;
+    grid-column-end: 11;
+    }
+    #fourth {
+    grid-row-start: 11;
+    grid-row-end: 12;
+    }*/
+
+@media screen and (min-width: 600px) {
+    header > nav > ul {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        /*justify-items: end NOT NEEDED ANYMORE WITH GRID START AND END;*/
+        list-style: none;
+        background-color: rgb(0, 0, 0);
+        padding-left: 0;
+        margin: 0;
+        /*text-align: right; NOT NEEDED ANYMORE WITH GRID START AND END*/
+        gap: 1em;
+    }
+
+
+    #first {
+    grid-column-start: 8;
+    grid-column-end: 9;
+    }
+    #second {
+    grid-column-start: 9;
+    grid-column-end: 10;
+    }
+    #third {
+    grid-column-start: 10;
+    grid-column-end: 11;
+    }
+    #fourth {
+    grid-column-start: 11;
+    grid-column-end: 12;
+    }
+
+}
+
+header > nav > ul > li > a {
+    color: rgb(255, 182, 46);
+    background: 
+    linear-gradient(
+        to right,
+        rgba(255, 182, 46, 1),
+        rgba(255, 182, 46, 1)
+    ),
+    linear-gradient(
+        to right,
+        rgba(255, 182, 46),
+        rgb(255, 100, 0),
+        rgb(255, 100, 0)
+    );
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    /*transition: background-size 400ms;*/
+    display: block;
+    padding: 1.5em 1em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+header a:hover {
+background-size: 0 3px, 100% 3px;
+}
+
+header > nav > ul { 
+    margin: 1em;
+   color: rgb(255, 182, 46);
+   /*padding: 0 3em; ADDING PADDING WILL NOT GROW CONTAINER, INSTEAD, PUSHES TEXT TO CENTER OF CONTAINER*/
+   border: 2px solid black;
+   font-size: 20px;
+   list-style: none;
+}
+
+nav.left {
+    margin: 1em;
+    color: rgb(255, 182, 46);
+    border: 2px solid black;
+}
+
+main {
+    margin: 1em;
+    color: rgb(255, 182, 46);
+    /*padding: ;*/
+    border: 2px solid black;
+    /*text-align: center;*/
+    font-size: 16px;
+    
+}
+
+main > .pitch {
+    line-height: 24px; 
+}
+
+main > .history {
+    line-height: 24px; 
+}
+
+main > .html {
+    font-size: 16px;
+}
+
+main > .css {
+    font-size: 16px;
+}
+
+main > .javascript {
+    font-size: 16px;
+}
+
+main > .middle-title {
+    font-size: 36px;
+}
+
+#article1 {
+    /*justify-self: end; Why doesnt this work? */
+    margin: 2em 0;
+    text-align: center;
+}
+
+#article2 {
+    margin: 2em 0;
+    text-align: center;
+}
+
+#article3 {
+    margin: 2em 0;
+    text-align: center;
+}
+
+aside {
+    margin: 1em;
+    color: rgb(255, 182, 46);
+    /*padding: ;*/
+    border: 2px solid black;
+    font-size: 20px;
+}
+
+footer {
+    list-style: none;
+    background-color: rgb(0, 0, 0);
+    padding-left: 0;
+    margin: 0;
+    gap: 1em;
+    color: rgb(255, 182, 46);
+    
+}
+
+.nav-links, .aside-links {
+    list-style: none;
+     margin: 2em;
+    font-size: 20px;
+    color: rgb(255, 182, 46);
+}

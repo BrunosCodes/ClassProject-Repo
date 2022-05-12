@@ -6,86 +6,120 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/other.css">
 </head>
 
 <body>
-
-   <div class="body">
-
     <header>
-        
-        <nav class = "navbar"> 
-            
+        <nav>
             <ul>
                 <img src="images/rosetta_stone.png" alt="logo" height="67">
-                
+
                 <li id="first"><a href="#">Home</a></li>
                 <li id="second"><a href="#">HTML</a></li>
                 <li id="third"><a href="#">CSS</a></li>
-                <li id="fourth"><a href="#">JavaScript</a></li>
+                <li id="fourth"><a href="javascript.html">JavaScript</a></li>
             </ul>
-        </nav> 
+        </nav>
     </header>
 
-    <nav class = "leftside">
+    <!-- ONLINE EXAMPLE OF RESPONSIVE NAVBAR
+<body>
+    <header>
+        <div class="nav-container">
+            <nav class="nav-checkbox">
+                <a href="#" class="logo">Logo</a>
+                <input type="checkbox" id="tab-nav" class="tab-nav"> 
+                <label for="tab-nav" class="tab-nav-label">Menu</label>
+                <ul class="tab-content">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Tour</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+-->
+
+    <nav class="left">
         <h2>Catalog </h2>
         <ul>
-            <li>Singles</li>
-            <li>Package Deals</li>
-            <li>Discounted</li>
-            <li>Membership</li>
+            <li class="nav-links"><a href="#">Singles</a></li>
+            <li class="nav-links"><a href="#">Package Deals</a></li>
+            <li class="nav-links"><a href="#">Discounted</a></li>
+            <li class="nav-links"><a href="#">Membership</a></li>
 
         </ul>
-        
 
-        
+
 
     </nav>
+    <!--</nav>-->
 
-    <main class = "middle">
+    <main>
         <h1 class="middle-title">Learn Coding Languages</h1>
         <section class="pitch">
-            <div>Learn the necessary skills for becoming a front-end web developer in no time! 
-                With one of the most diverse libraries of instructionals and  lectures and highly 
-                regarded teachers, we will help you learn the languages you need to become a developer!</div>
+            <div>Learn the skills to become a front-end web developer in no time!
+                With one of the most diverse lesson plans and competent teachers,
+                anyone can do it!</div>
         </section>
 
         <section class="history">
             <div>
-                Ever since HTML, JavaScript, and CSS were created in in 1993, 1995, and 1996 respectively, 
-                the trio have been the fundamentals of coding.  Because they are so essential, these three 
-                are commonly learnt first. 
+                Ever since HTML, JavaScript, and CSS were created the trio have been the fundamentals of coding. Being
+                so essential, these three
+                are commonly learnt first.
             </div>
         </section>
 
         <article id="article1"><img src="images/html.png" alt="HTML Logo" height="75"></article>
-        <div class="html"></div>
+        <div class="html">
+            If HTML were a body part it would be the skeleton. HTML stands for hyper text markup language; basically
+            a language that marks up words and is capable of using hypertext links. HTML's function is to produce the
+            content that will be displayed
+            on the viewer's browser.
+        </div>
 
         <article id="article2"><img src="images/CSS3_logo.png" alt="HTML Logo" height="75"></article>
-        <div class="css"></div>
-        
+        <div class="css">
+            CSS would be the skin of the anatomical website. CSS, or cascading style sheets is a standard that uses
+            rules which when applied
+            generally, trickle down to other aspects unless specified otherwise. CSS's function is to style and organize
+            the content from HTML.
+            on the viewer's browser.
+        </div>
+
+        <article id="article3"><img src="images/javascript-logo.png" alt="HTML Logo" height="75"></article>
+        <div class="javascript">
+            If HTML is the skeleton and CSS is the skin, JavaScript is the muscle of the operation. Javascript is a
+            programming hugely popular
+            in websites that carries out operations that make the site function.
+        </div>
         <article id="article3">
             <div class="javascript"></div>
         </article>
-    
+
     </main>
 
-    <aside class = "rightside">
+    <aside>
         <h2 class="right-title">Recommended</h2>
         <ul>
-            <li>jQuery</li>
-            <li>PHP</li>
-            <li>Python</li>
-            <li>Node</li>
+            <li class="aside-links"><a href="#">jQuery</a></li>
+            <li class="aside-links"><a href="#">PHP</a></li>
+            <li class="aside-links"><a href="#">Python</a></li>
+            <li class="aside-links"><a href="#">Node</a></li>
         </ul>
-    
+
     </aside>
 
 
     <footer>Footer</footer>
 
-    </div>
+    <!--</div>-->
+
 
 </body>
 
