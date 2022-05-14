@@ -1,0 +1,3 @@
+# Web-Dev-Languages-Repo
+
+My Website is meant to provide information on and promote the web development coding languages that are HTML, CSS, and JavaScript. My CSS item is the use of 2 media queries to expand and collapse properly from mobile sizes to medium sized devices, and then to desktop sizes by switching between vertical and horizontal styles.  The navigation bar is also affected in this way. I've also used CSS Grid to layout my content on the page. My Javascript items include validation feedback in a contact form for the name and number fields. The home page contains all requirements except for the javascript validations, which this page can be found by clicking "JavaScript" in the navbar.
